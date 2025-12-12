@@ -39,6 +39,14 @@ body {
     border-radius: 8px;
 }
 
+.ativo { 
+    background-color: red;
+}
+
+.padrao {
+    background-color: #202020;
+}
+
 .flex {
     display: flex;
     align-items: center;
