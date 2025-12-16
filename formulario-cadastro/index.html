@@ -16,32 +16,33 @@
         Validações 
         1. Nome deverá ser nome e sobrenome
         2. Email deverá conter @ e .com
-        3. Sexo deverá ser "M" || "F" || "Masculino" || "MASCULINO" || "masculino" || "Feminino" || "FEMININO" || "feminino"
+        3. Sexo deverá ser "M" || "F" ||     "Masculino" || "MASCULINO" || "masculino" || "Feminino" || "FEMININO" || "feminino"
         4. Data nascimento Formato pt-br "DD/MM/AAAA"
     -->
 
     <main>
         <h1>Formulário de Cadastro</h1>
-        <form id="form-cadastro" novalidate>
+        <form id="form-cadastro">
             <div>
-                <label for="nome">Nome: </label>
+                <label for="nome">Nome *: </label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
             </div>
             <div>
-                <label for="email">Email: </label>
+                <label for="email">Email *: </label>
                 <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
             </div>
             <div>
-                <label for="sexo">Sexo: </label>
-                <select name="sexo" id="sexo">
+                <label for="sexo">Sexo *: </label>
+                <input type="text" name="sexo" id="sexo" placeholder="Digite o seu sexo">
+                <!-- <select name="sexo" id="sexo">
                     <option value="">--Selecione uma opção--</option>
                     <option value="F">Feminino</option>
                     <option value="M">Masculino</option>
-                </select>
+                </select> -->
             </div>
             <div>
-                <label for="data-nascimento">Data de nascimento (DD/MM/AAAA): </label>
-                <input type="date" name="data-nascimento" id="data-nascimento">
+                <label for="data-nascimento">Data de nascimento (DD/MM/AAAA) *: </label>
+                <input type="datetime-local" name="data-nascimento" id="data-nascimento">
             </div>
 
             <div>
